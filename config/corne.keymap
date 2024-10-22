@@ -74,7 +74,7 @@
 
         i {
             bindings = <&kp ESC>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
         };
 
         j {
@@ -95,6 +95,21 @@
         m {
             bindings = <&kp TILDE>;
             key-positions = <28 29>;
+        };
+
+        n {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <17 5>;
+        };
+
+        o {
+            bindings = <&kp PIPE>;
+            key-positions = <6 18>;
+        };
+
+        p {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <10 9>;
         };
     };
 
