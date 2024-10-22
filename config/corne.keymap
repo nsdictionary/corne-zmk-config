@@ -33,48 +33,68 @@
         compatible = "zmk,combos";
 
         a {
-            bindings = <&kp ESCAPE>;
-            key-positions = <2 1>;
+            bindings = <&kp MINUS>;
+            key-positions = <8 7>;
         };
 
         b {
-            bindings = <&kp CLCK>;
-            key-positions = <14 13>;
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <8 9>;
         };
 
         c {
-            bindings = <&kp TAB>;
-            key-positions = <26 25>;
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <31 32>;
         };
 
         d {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <10 9>;
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <32 33>;
         };
 
         e {
-            bindings = <&kp ENTER>;
-            key-positions = <22 21>;
+            bindings = <&kp GRAVE>;
+            key-positions = <30 31>;
         };
 
         f {
-            bindings = <&kp MINUS>;
-            key-positions = <19 20>;
+            bindings = <&kp COLON>;
+            key-positions = <7 18>;
         };
 
         g {
-            bindings = <&kp EQUAL>;
-            key-positions = <21 20>;
+            bindings = <&kp DOLLAR>;
+            key-positions = <2 3>;
         };
 
         h {
-            bindings = <&sys_reset>;
-            key-positions = <1 29>;
+            bindings = <&kp EQUAL>;
+            key-positions = <3 4>;
+        };
+
+        i {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
         };
 
         j {
-            bindings = <&sys_reset>;
-            key-positions = <30 10>;
+            bindings = <&kp LC(S)>;
+            key-positions = <4 17>;
+        };
+
+        k {
+            bindings = <&kp LC(C)>;
+            key-positions = <26 27>;
+        };
+
+        l {
+            bindings = <&kp LC(V)>;
+            key-positions = <27 28>;
+        };
+
+        m {
+            bindings = <&kp TILDE>;
+            key-positions = <28 29>;
         };
     };
 
