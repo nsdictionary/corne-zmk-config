@@ -18,12 +18,40 @@
 
 / {
     behaviors {
-        &mt {
-            tapping-term-ms = <200>;
-            hold-trigger-on-release;
-            flavor = "tap-preferred";
-            quick-tap-ms = <100>;
-        };
+            hm: homerow_mods {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "HOMEROW_MODS";
+                    #binding-cells = <2>;
+                    tapping-term-ms = <200>;
+                    quick-tap-ms = <100>;
+                    flavor = "tap-preferred";
+                    bindings = <&kp>, <&kp>;
+                    hold-trigger-on-release;    // 추가된 설정
+            };
+            // td0와 td1 설정은 그대로 유지
+            td0: tap_dance_0 {
+                    compatible = "zmk,behavior-tap-dance";
+                    label = "TAP_DANCE_0";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    bindings = <&kp LALT>, <&kp RIGHT_ALT>;
+            };
+            td1: tap_dance_1 {
+                    compatible = "zmk,behavior-tap-dance";
+                    label = "TAP_DANCE_1";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    bindings = <&kp LCTRL>, <&kp RIGHT_CONTROL>;
+            };
+    };
+
+    // 나머지 키맵 설정은 그대로 유지
+    conditional_layers {
+            compatible = "zmk,conditional-layers";
+            tri_layer {
+                    if-layers = <1 2>;
+                    then-layer = <3>;
+            };
     };
 
     combos {
