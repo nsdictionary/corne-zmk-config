@@ -17,6 +17,13 @@
 #define NUMBERS_L 3
 
 / {
+    &mt {
+        tapping-term-ms = <200>;
+        hold-trigger-on-release;
+        flavor = "tap-preferred";
+        quick-tap-ms = <100>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
