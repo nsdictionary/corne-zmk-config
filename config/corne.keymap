@@ -63,54 +63,54 @@
 
         default_layer {
             bindings = <
-                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y   &kp U       &kp I       &kp O       &kp P
-                &kp A       &kp S       &kp D       &kp F       &kp G           &kp H   &kp J       &kp K       &kp L       &kp QUOT
-                &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N   &kp M       &kp COMMA   &kp DOT     &kp SLASH
+                &none  &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y   &kp U       &kp I       &kp O       &kp P        &none
+                &none  &kp A       &kp S       &kp D       &kp F       &kp G           &kp H   &kp J       &kp K       &kp L       &kp QUOT     &none
+                &none  &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N   &kp M       &kp COMMA   &kp DOT     &kp SLASH    &none
                                     &lt NAV HOME &lt NUM END &mt LCTRL BSPC     &mt RSFT SPACE &lt SYM PG_UP &lt NAV PG_DN
             >;
         };
 
         num_layer {
             bindings = <
-                &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6  &kp N7      &kp N8      &kp N9      &kp N0
-                &kp N6      &kp N7      &kp N8      &kp N9      &kp N0          &kp UNDER &kp N4    &kp N5      &kp N6      &kp PLUS
-                &kp SLASH   &kp DOT     &kp STAR    &kp PLUS    &kp MINUS       &kp MINUS &kp N1    &kp N2      &kp N3      &kp EQUAL
+                &none  &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6  &kp N7      &kp N8      &kp N9      &kp N0      &none
+                &none  &kp N6      &kp N7      &kp N8      &kp N9      &kp N0          &kp UNDER &kp N4    &kp N5      &kp N6      &kp PLUS    &none
+                &none  &kp SLASH   &kp DOT     &kp STAR    &kp PLUS    &kp MINUS       &kp MINUS &kp N1    &kp N2      &kp N3      &kp EQUAL   &none
                                     &tog NUM     &trans      &trans              &kp ENTER &lt FUN N0 &kp DOT
             >;
         };
 
         sym_layer {
             bindings = <
-                &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET &kp AMPS  &kp STAR    &kp LPAR    &kp RPAR
-                &none       &kp LC(LEFT) &kp LG(UP)  &kp LC(RIGHT) &none         &kp GRAVE &kp SEMI  &kp COLON   &kp LBKT    &kp RBKT
-                &none       &kp LG(LEFT) &kp LG(DOWN) &kp LG(RIGHT) &none        &kp TILDE &kp BSLH  &kp PIPE    &kp LBRC    &kp RBRC
+                &none  &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET &kp AMPS  &kp STAR    &kp LPAR    &kp RPAR    &none
+                &none  &none       &kp LC(LEFT) &kp LG(UP)  &kp LC(RIGHT) &none         &kp GRAVE &kp SEMI  &kp COLON   &kp LBKT    &kp RBKT   &none
+                &none  &none       &kp LG(LEFT) &kp LG(DOWN) &kp LG(RIGHT) &none        &kp TILDE &kp BSLH  &kp PIPE    &kp LBRC    &kp RBRC   &none
                                     &tog NUM     &lt FUN FUN   &kp DEL           &trans    &trans    &tog SYM
             >;
         };
 
         nav_layer {
             bindings = <
-                &kp ESC     &kp LA(LS(TAB)) &kp LC(C) &kp LA(TAB) &kp C_AL_CALC &kp INS  &kp HOME   &kp UP      &kp END     &kp PG_UP
-                &kp TAB     &kp HOME    &kp UP      &kp END     &kp PG_UP        &kp LEFT &kp DOWN   &kp UP      &kp RIGHT   &kp PG_DN
-                &kp CAPS    &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN        &none    &kp LEFT   &kp DOWN    &kp RIGHT   &none
+                &none  &kp ESC     &kp LA(LS(TAB)) &kp LC(C) &kp LA(TAB) &kp C_AL_CALC &kp INS  &kp HOME   &kp UP      &kp END     &kp PG_UP    &none
+                &none  &kp TAB     &kp HOME    &kp UP      &kp END     &kp PG_UP        &kp LEFT &kp DOWN   &kp UP      &kp RIGHT   &kp PG_DN   &none
+                &none  &kp CAPS    &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN        &none    &kp LEFT   &kp DOWN    &kp RIGHT   &none       &none
                                     &tog SYS     &tog NUM    &tog NAV            &tog SYS  &tog SYM   &tog SYS
             >;
         };
 
         sys_layer {
             bindings = <
-                &sys_reset  &bootloader &to BASE    &none       &none            &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP
-                &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI    &kp C_BRI_UP    &none    &kp C_PREV &kp C_PP   &kp C_NEXT &none
-                &none       &none       &none       &none       &kp C_BRI_DN     &none    &none      &none      &none      &none
+                &none  &sys_reset  &bootloader &to BASE    &none       &none            &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none
+                &none  &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI    &kp C_BRI_UP    &none    &kp C_PREV &kp C_PP   &kp C_NEXT &none  &none  
+                &none  &none       &none       &none       &none       &kp C_BRI_DN     &none    &none      &none      &none      &none  &none
                                     &trans      &tog NUM    &tog NAV            &tog SYS  &tog SYM   &trans
             >;
         };
 
         fun_layer {
             bindings = <
-                &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp F6  &kp F7      &kp F8      &kp F9      &kp F10
-                &kp F6      &kp F7      &kp F8      &kp F9      &kp F10         &none   &kp F4      &kp F5      &kp F6      &kp F11
-                &none       &none       &none       &kp F11     &kp F12         &none   &kp F1      &kp F2      &kp F3      &kp F12
+                &none  &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp F6  &kp F7      &kp F8      &kp F9      &kp F10  &none
+                &none  &kp F6      &kp F7      &kp F8      &kp F9      &kp F10         &none   &kp F4      &kp F5      &kp F6      &kp F11  &none
+                &none  &none       &none       &none       &kp F11     &kp F12         &none   &kp F1      &kp F2      &kp F3      &kp F12  &none
                                     &kp LC(LS(ESC)) &tog FUN &trans           &trans  &trans     &kp LC(LA(DEL))
             >;
         };
