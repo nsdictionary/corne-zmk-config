@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 // Layer definitions
@@ -145,10 +146,10 @@
 
         base {
             bindings = <
-&none  &kp Q  &kp W  &kp E         &kp R  &kp T                  &kp Y                 &kp U  &kp I         &kp O    &kp P          &none
-&none  &kp A  &kp S  &kp D         &kp F  &kp G                  &kp H                 &kp J  &kp K         &kp L    &kp SEMICOLON  &none
-&none  &kp Z  &kp X  &kp C         &kp V  &kp B                  &kp N                 &kp M  &kp COMMA     &kp DOT  &kp SLASH      &none
-                     &kp LEFT_ALT  &mo 1  &mt LCTRL BACKSPACE    &mt LEFT_SHIFT SPACE  &mo 2  &kp LEFT_GUI
+&none  &kp Q  &kp W  &kp E         &kp R  &kp T                  &kp Y      &kp U  &kp I           &kp O    &kp P          &none
+&none  &kp A  &kp S  &kp D         &kp F  &kp G                  &kp H      &kp J  &kp K           &kp L    &kp SEMICOLON  &none
+&none  &kp Z  &kp X  &kp C         &kp V  &kp B                  &kp N      &kp M  &kp COMMA       &kp DOT  &kp SLASH      &none
+                     &kp LEFT_ALT  &mo 1  &mt LCTRL BACKSPACE    &kp SPACE  &mo 2  &kp LEFT_SHIFT
             >;
         };
 
@@ -163,10 +164,10 @@
 
         function {
             bindings = <
-&none  &kp F1      &kp F2   &kp F3        &kp F4                  &kp F5                     &kp F6  &kp F7          &kp F8          &kp F9        &kp F10          &none
-&none  &kp F11     &kp F12  &kp C_MUTE    &kp C_VOLUME_DOWN       &kp C_VOLUME_UP            &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&none  &kp DELETE  &none    &kp CAPSLOCK  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))    &none   &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &none
-                            &trans        &trans                  &trans                     &trans  &trans          &trans
+&none  &kp F1      &kp F2        &kp F3      &kp F4             &kp F5             &kp F6                   &kp F7          &kp F8          &kp F9        &kp F10          &none
+&none  &kp F11     &kp F12       &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp LC(LG(LEFT_ARROW))   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&none  &kp DELETE  &kp CAPSLOCK  &bt BT_CLR  &bt BT_PRV         &bt BT_NXT         &kp LC(LG(RIGHT_ARROW))  &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &none
+                                 &trans      &trans             &trans             &trans                   &trans          &trans
             >;
         };
     };
