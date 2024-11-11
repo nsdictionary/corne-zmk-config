@@ -17,18 +17,6 @@
 #define FUN  5
 
 / {
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
     // Combo definitions based on QMK combos
 
     combos {
@@ -104,26 +92,6 @@
             key-positions = <34 33>;
         };
 
-        n {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <8 20>;
-        };
-
-        o {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <19 20>;
-        };
-
-        p {
-            bindings = <&kp DOWN_ARROW>;
-            key-positions = <20 32>;
-        };
-
-        q {
-            bindings = <&kp RIGHT_ARROW>;
-            key-positions = <20 21>;
-        };
-
         r {
             bindings = <&kp TILDE>;
             key-positions = <5 17>;
@@ -144,6 +112,26 @@
             key-positions = <7 19>;
         };
 
+        n {
+            bindings = <&kp LS(LC(LEFT_ALT))>;
+            key-positions = <25 26 27>;
+        };
+
+        o {
+            bindings = <&kp LC(LS(LEFT_ALT))>;
+            key-positions = <34 33 32>;
+        };
+
+        p {
+            bindings = <&kp LS(LEFT_ALT)>;
+            key-positions = <25 27>;
+        };
+
+        q {
+            bindings = <&kp LS(LEFT_ALT)>;
+            key-positions = <34 32>;
+        };
+
         // Add more combos as needed...
     };
 
@@ -152,10 +140,10 @@
 
         base {
             bindings = <
-&none  &kp Q  &kp W  &kp E             &kp R           &kp T                  &kp Y                 &kp U  &kp I                 &kp O    &kp P          &none
-&none  &kp A  &kp S  &kp D             &kp F           &kp G                  &kp H                 &kp J  &kp K                 &kp L    &kp SEMICOLON  &none
-&none  &kp Z  &kp X  &kp C             &kp V           &kp B                  &kp N                 &kp M  &kp COMMA             &kp DOT  &kp SLASH      &none
-                     &kp LS(LEFT_ALT)  &lt 1 LEFT_ALT  &mt LCTRL BACKSPACE    &mt LEFT_SHIFT SPACE  &mo 2  &kp LC(LG(LEFT_ALT))
+&none  &kp Q  &kp W  &kp E      &kp R  &kp T            &kp Y      &kp U  &kp I           &kp O    &kp P          &none
+&none  &kp A  &kp S  &kp D      &kp F  &kp G            &kp H      &kp J  &kp K           &kp L    &kp SEMICOLON  &none
+&none  &kp Z  &kp X  &kp C      &kp V  &kp B            &kp N      &kp M  &kp COMMA       &kp DOT  &kp SLASH      &none
+                     &kp LCTRL  &mo 1  &kp BACKSPACE    &kp SPACE  &mo 2  &kp LEFT_SHIFT
             >;
         };
 
