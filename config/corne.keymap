@@ -38,104 +38,103 @@
         };
 
         c {
-            timeout-ms = <50>;
-            key-positions = <25 26>;
-            bindings = <&kp LEFT_SHIFT>;
-        };
-
-        d {
             bindings = <&kp BACKSPACE>;
             key-positions = <10 9>;
         };
 
-        e {
+        d {
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
         };
 
-        f {
+        e {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <25 26>;
         };
 
-        g {
+        f {
             bindings = <&kp LCTRL>;
             key-positions = <26 27>;
         };
 
-        h {
+        g {
             bindings = <&kp LEFT_ALT>;
             key-positions = <27 28>;
         };
 
-        i {
+        h {
             bindings = <&kp LEFT_GUI>;
             key-positions = <29 28>;
         };
 
-        j {
+        i {
             bindings = <&kp LEFT_GUI>;
             key-positions = <30 31>;
         };
 
-        k {
+        j {
             bindings = <&kp LEFT_ALT>;
             key-positions = <31 32>;
         };
 
-        l {
+        k {
             bindings = <&kp LCTRL>;
             key-positions = <33 32>;
         };
 
-        m {
+        l {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <34 33>;
         };
 
-        r {
+        m {
             bindings = <&kp TILDE>;
             key-positions = <5 17>;
         };
 
-        s {
+        n {
             bindings = <&kp GRAVE>;
             key-positions = <6 18>;
         };
 
-        t {
+        o {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <4 16>;
         };
 
-        u {
+        p {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <7 19>;
         };
 
-        n {
+        q {
             bindings = <&kp LS(LC(LEFT_ALT))>;
             key-positions = <25 26 27>;
         };
 
-        o {
+        r {
             bindings = <&kp LC(LS(LEFT_ALT))>;
             key-positions = <34 33 32>;
         };
 
-        p {
+        s {
             bindings = <&kp LS(LEFT_ALT)>;
             key-positions = <25 27>;
         };
 
-        q {
+        t {
             bindings = <&kp LS(LEFT_ALT)>;
             key-positions = <34 32>;
         };
 
-        v {
-            bindings = <&kp SPACE>;
+        u {
+            bindings = <&kp COLON>;
             key-positions = <18 30>;
+        };
+
+        v {
+            bindings = <&kp ESCAPE>;
+            key-positions = <17 29>;
         };
 
         // Add more combos as needed...
