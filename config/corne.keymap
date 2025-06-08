@@ -4,12 +4,13 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT_L 0
 #define SYMBOLS_L 1
@@ -119,10 +120,10 @@
         default_layer {
             label = "0";
             bindings = <
-&none  &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y        &kp U             &kp I         &kp O           &kp P                   &none
-&none  &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G        &kp H        &hm LEFT_SHIFT J  &hm LCTRL K   &hm LEFT_ALT L  &hm LEFT_WIN SEMICOLON  &none
-&none  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N        &kp M             &kp COMMA     &kp DOT         &kp FSLH                &none
-                                       &lt 3 ESC    &lt 1 SPACE       &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE   &lt 6 DELETE
+&none  &kp Q           &kp W           &kp E        &kp R             &kp T          &kp Y        &kp U             &kp I         &kp O           &kp P                   &none
+&none  &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G          &kp H        &hm LEFT_SHIFT J  &hm LCTRL K   &hm LEFT_ALT L  &hm LEFT_WIN SEMICOLON  &none
+&none  &kp Z           &kp X           &kp C        &kp V             &kp B          &kp N        &kp M             &kp COMMA     &kp DOT         &kp FSLH                &none
+                                       &lt 3 ESC    &lt 1 TAB         &lt 2 ENTER    &lt 5 SPACE  &lt 4 BACKSPACE   &lt 6 DELETE
             >;
         };
 
@@ -132,7 +133,7 @@
 &none  &none         &none         &none      &none           &none    &kp LC(LS(Z))  &kp LC(V)      &kp LC(C)       &kp LC(X)     &kp LC(Z)        &none
 &none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp CAPSLOCK   &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
 &none  &none         &none         &none      &none           &none    &kp INSERT     &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
-                                   &none      &trans          &none    &kp ENTER      &kp BACKSPACE  &kp DELETE
+                                   &none      &trans          &none    &kp SPACE      &kp BACKSPACE  &kp DELETE
             >;
         };
 
@@ -180,10 +181,10 @@
 
         fun_layer {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &none  &none      &none      &none     &none     &none
-&none  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
-&none  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &none  &none      &none      &none     &none     &none
-                        &kp C_MENU  &kp SPACE  &kp TAB            &none  &none      &trans
+&none  &kp F12  &kp F7  &kp F8      &kp F9   &kp PRINTSCREEN    &none  &none      &none      &none     &none     &none
+&none  &kp F11  &kp F4  &kp F5      &kp F6   &kp SCROLLLOCK     &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
+&none  &kp F10  &kp F1  &kp F2      &kp F3   &kp PAUSE_BREAK    &none  &none      &none      &none     &none     &none
+                        &kp C_MENU  &kp TAB  &kp ENTER          &none  &none      &trans
             >;
         };
 
