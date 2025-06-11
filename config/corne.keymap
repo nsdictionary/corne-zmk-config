@@ -74,7 +74,7 @@
         };
 
         i {
-            bindings = <&kp ESC>;
+            bindings = <&kp EXCLAMATION>;
             key-positions = <1 2>;
         };
 
@@ -109,7 +109,7 @@
         };
 
         p {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp PLUS>;
             key-positions = <10 9>;
         };
     };
