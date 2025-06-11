@@ -122,7 +122,7 @@
             bindings = <
 &none  &kp Q           &kp W           &kp E         &kp R             &kp T          &kp Y      &kp U             &kp I        &kp O           &kp P                   &none
 &none  &hm LEFT_WIN A  &hm LEFT_ALT S  &hm LCTRL D   &hm LEFT_SHIFT F  &kp G          &kp H      &hm LEFT_SHIFT J  &hm LCTRL K  &hm LEFT_ALT L  &hm LEFT_WIN SEMICOLON  &none
-&none  &kp Z           &kp X           &kp C         &kp V             &kp B          &kp N      &kp M             &kp COMMA    &kp DOT         &kp FSLH                &none
+&none  &lt 8 Z         &kp X           &kp C         &kp V             &kp B          &kp N      &kp M             &kp COMMA    &kp DOT         &kp FSLH                &none
                                        &lt 6 DELETE  &lt 4 BACKSPACE   &lt 5 ENTER    &lt 2 TAB  &lt 1 SPACE       &lt 3 ESC
             >;
         };
@@ -188,12 +188,21 @@
             >;
         };
 
-        game {
+        game_layer {
             bindings = <
 &none  &kp LALT   &kp Q  &kp W    &kp E    &kp R        &kp Y           &kp U           &kp I         &kp O            &kp P      &none
 &none  &kp LCTRL  &kp A  &kp S    &kp D    &kp F        &kp H           &kp J           &kp K         &kp L            &kp M      &none
 &none  &kp LSHFT  &kp Z  &kp X    &kp C    &kp V        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RSHFT  &none
                          &kp ESC  &kp TAB  &kp SPACE    &kp ENTER       &kp BSPC        &to 0
+            >;
+        };
+
+        roguelike_layer {
+            bindings = <
+&none  &none   &none  &none  &none  &none    &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none  &none
+&none  &none   &none  &none  &none  &none    &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none
+&none  &trans  &none  &none  &none  &none    &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none
+                      &none  &none  &none    &kp KP_NUMLOCK  &kp KP_NUMBER_0  &kp KP_DOT
             >;
         };
     };
